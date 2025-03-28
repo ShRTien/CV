@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal CV</title>
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+
+
+<body class="container-fluid">
+    <header class="  w-100 bg-dark text-white hero ">
+        <div class="hero-content">
+            <h1>Nguyễn Thị Thuỷ Tiên</h1>
+            <p>Fullstack Developer</p>
+        </div>
+    </header>
+    
+  <section id="nav-bar">
+    <nav class="container">
+      <a href="@">
+        <i class="icon-user"></i>Thông tin
+      </a>
+      <div class="start">
+      <a href="@">
+        <i class="icon-doc-text-inv"></i>Lý lịch
+      </a>
+      </div>
+      <img class="main-avatar" src="images/default-avatar.webp" alt="avatar"/>
+      <a href="@">
+        <i class="icon-mail-alt"></i>Chứng chỉ
+      </a>
+      <a href="@">
+        <i class="icon-star"></i>Dự án
+      </a>
+    </nav>
+  </section>
+    
+    <section id="about" class="section">
+        <div class="about-container">
+            <div class="about-box">
+                <h3>Career Objective</h3>
+                <p>Là một sinh viên đã hoàn thành chương trình chứng chỉ doanh nghiệp của FUNIX. Em mong muốn mình sẽ được làm việc với vị trí <b>Fullstack Developer</b>,để có thể vận dụng những kiến thức đã được trau dồi và không ngừng học hỏi để phát triển bản thân cũng như hoàn thành tốt các công việc được giao.</p>
+            </div>
+            <div class="about-box " id="info">
+              <div class="section-content">
+                <h3>Personal Information</h3>
+                <p><span>Giới tính </span>: Nữ</p>
+                <p><span>Ngày sinh </span>: 16/05/1999</p>
+                <p><span>Điện thoại  </span>: 0774924898</p>
+                <p><span>E-mail </span>: nguyentien1651999@gmail.com</p>
+                <p><span>Địa chỉ </span>: 31/2/3 Q12 Tp.Hồ Chí Minh</p>
+                <p><span>Website </span>https://shr.edu</p>
+              </div>
+            </div>
+            <form id="emailForm">
+              <label for="email">Enter your email:</label>
+              <input type="text" id="email" name="email">
+              <span class="error" id="error-message">Invalid email format!</span>
+              <br><br>
+              <button type="submit">Submit</button>
+          </form>
+        </div>
+    </section>
+    
+  
+    </section>
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <!-- Kinh nghiem -->
+            <div class="experience-box" id="experience" onmouseover="handleOnmouseOver(this) ">
+               <div class="grid" style="margin-top: 20px;">
+                <h1>Kinh nghiệm</h1>
+                <i class="ic-toolbox"></i>  
+              </div>
+              <div class="job-content" >
+              <ul>
+                <li><h4> Công ty Beyond Voxelization</h4></li>
+                <p class="time">04/2019-07/2024</p>
+                <p>
+                  Voxel Artist<br />
+                  - Thiết kế, xây dựng NFT theo concept của The SandBox<br/>
+                  - Nhận concept, yêu cầu từ phía client<br />
+                  - Thiết kế gameplay, event cho client<br />
+                </p>
+    
+                <li><h4> Công ty Concentrix Việt Nam</h4></li>
+            <p class="time">08/2024-<span>Hiện Tại</span></p>
+            <p>
+              First Line Agent ETG English<br />
+              - Nhận interaction từ khách hàng<br/>
+              - Điều chỉnh các chuyến bay theo order từ khách <br />
+            </p>
+              </ul>
+            </div>
+            <div class="control-view">
+              <button type="button" class="btn btn-warning view-more">View more</button>
+              <button type="button" class="btn btn-warning view-less">View less</button>
+            </div>
+            </div>
+                <!-- Hoc van -->
+            <div class="experience-box" id="educate">
+              <div class="grid" style="margin-top: 20px;">
+                <h1>Học Vấn</h1>
+                <i class="ic-toolbox "></i>  
+              </div>
+              <div class="job-content" >
+              <ul>
+                <li><h4> Đại Học Công Nghệ Thành Phố Hồ Chí Minh</h4></li>
+                <p class="time">04/2017-07/2023</p>
+                <p>
+                  Công Nghệ Phần Mềm<br />
+                </p>
+      
+                <li><h4> Funix</h4></li>
+                <p class="time">01-2024- <span>Hiện Tại</span></p>
+                <p>
+                  Community Manager<br />
+                  - Quản lý team Product<br/>
+                  - Chịu trách nhiệm giao tiếp với client, nhận concept, thiết kế<br />
+                </p>
+              </ul>
+            </div>
+            <div class="control-view">
+              <button type="button" class="btn btn-warning view-more">View more</button>
+              <button type="button" class="btn btn-warning view-less">View less</button>
+            </div>
+            </div>
+                <!-- Hoat Dong-->
+            <div class="experience-box" id="acitivy">
+              <div class="grid" style="margin-top: 20px;">
+                <h1>Họat động</h1>
+                <i class="ic-toolbox"></i>  
+              </div>
+              <div class="job-content" >
+              <ul>
+                <li><h4> Blockchain & AI: The Next Revolution</h4></li>
+                <p class="time">24/04/2024</p>
+        
+              </ul>
+              <ul>
+                <li><h4>  METAVERSE SHOWCASE DAY</h4></li>
+                <p class="time">07/06/2024</p>
+        
+              </ul>
+            </div>
+            <div class="control-view">
+              <button type="button" class="btn btn-warning view-more">View more</button>
+              <button type="button" class="btn btn-warning view-less">View less</button>
+            </div>
+            </div>
+
+                <!-- So thich -->
+            <div class="experience-box" id="hobby">
+              <div class="grid" style="margin-top: 20px;">
+                <h1>Sở thích</h1>
+                <i class="ic-telescope"></i>  
+              </div>
+              <div class="line-2" >
+                <i class="ic-megaphone icn"></i>
+                <i class="ic-strategy icn"></i>
+                <i class="ic-hotairballoon icn"></i>
+                <i class="ic-basket icn"></i>
+                <p>Âm nhạc</p>
+                <p>Game</p>
+                <p>Sách</p>
+                <p>Nấu ăn</p>
+              </div>
+              <div class="control-view">
+                <button type="button" class="btn btn-warning view-more">View more</button>
+                <button type="button" class="btn btn-warning view-less">View less</button>
+              </div>
+            </div>
+                <!-- Ngon ngu-->
+            <div class="experience-box"  id="language">
+              <div class="grid" style="margin-top: 20px;">
+                <h1>Ngôn Ngữ</h1>
+                <i class="ic-telescope "></i>  
+              </div>
+              <div class="line-3">
+                <p> Tiếng Anh</p>
+                     <span class="blue"></span>
+                      <span class="blue"></span>
+                      <span class="blue"></span>
+                       <span class="blue"></span>
+                        <span class="blue"></span>
+              <p> Tiếng Trung</p>
+                         <span class="blue"></span>
+                        <span class="blue"></span>
+                       <span class="blue"></span>
+                      <span class="gray"></span>
+                      <span class="gray"></span>
+              </div>
+              <div class="control-view">
+                <button type="button" class="btn btn-warning view-more">View more</button>
+                <button type="button" class="btn btn-warning view-less">View less</button>
+              </div>
+            </div>
+                <!-- Ky nang -->
+            <div class="experience-box" id="skill">
+              <div class="grid" style="margin-top: 20px;">
+                <h1>Kỹ năng</h1>
+                <i class="ic-telescope"></i>  
+              </div>
+              <div class="line-4">
+                <p> C#</p>
+                <span class="blue"></span>
+                <span class="blue"></span>
+                <span class="blue"></span>
+                <span class="gray"></span>
+                <span class="gray"></span>
+                <p> Python</p>
+                <span class="blue"></span>
+                <span class="blue"></span>
+                <span class="blue"></span>
+                <span class="gray"></span>
+                <span class="gray"></span>
+                <p> HTML-CSS</p>
+                <span class="blue"></span>
+                <span class="blue"></span>
+                <span class="gray"></span>
+                <span class="gray"></span>
+                <span class="gray"></span>
+
+              </div>
+              <div class="control-view">
+                <button type="button" class="btn btn-warning view-more">View more</button>
+                <button type="button" class="btn btn-warning view-less">View less</button>
+              </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+              <img class="p-image" src="images\project_1.png" alt="duan">
+        <h5>Cv cá nhân</h5>
+        <div class="top-border">
+          <span class="x-border">2021</span>
+          <i class="icon-user-1"></i>
+          <span>Funix</span>
+          <i class="icon-lamp"></i>
+          <span>Developer</span>
+        </div>
+        <div class="top-border">
+            <p>Mô tả</p>
+            <p>
+              Trang web CV các nhân online. Gồm các thông tin cá nhân nhằm nâng cao kỹ năng nghề nghiệp.
+            </p>
+        </div>
+        <div class="top-border">
+          <p> Nhiệm Vụ</p>
+          <p>- Phát triển code-review và tối ưu code-xử lý lỗi</p>
+        </div>
+            </div>
+            <div class="project-box">
+              <img class="p-image" src="images\project_1.png" alt="duan">
+        <h5>Cv cá nhân</h5>
+        <div class="top-border">
+          <span class="x-border">2021</span>
+          <i class="icon-user-1"></i>
+          <span>Funix</span>
+          <i class="icon-lamp"></i>
+          <span>Developer</span>
+        </div>
+        <div class="top-border">
+            <p>Mô tả</p>
+            <p>
+              Trang web CV các nhân online. Gồm các thông tin cá nhân nhằm nâng cao kỹ năng nghề nghiệp.
+            </p>
+        </div>
+        <div class="top-border">
+          <p> Nhiệm Vụ</p>
+          <p>- Phát triển code-review và tối ưu code-xử lý lỗi</p>
+        </div>
+            </div>
+            <div class="project-box">
+
+              <img class="p-image" src="images\project_1.png" alt="duan">
+        <h5>Cv cá nhân</h5>
+        <div class="top-border">
+          <span class="x-border">2021</span>
+          <i class="icon-user-1"></i>
+          <span>Funix</span>
+          <i class="icon-lamp"></i>
+          <span>Developer</span>
+        </div>
+        <div class="top-border">
+            <p>Mô tả</p>
+            <p>
+              Trang web CV các nhân online. Gồm các thông tin cá nhân nhằm nâng cao kỹ năng nghề nghiệp.
+            </p>
+        </div>
+        <div class="top-border">
+          <p> Nhiệm Vụ</p>
+          <p>- Phát triển code-review và tối ưu code-xử lý lỗi</p>
+        </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <footer>
+      <div class="footer">
+        <ul>
+          <i class="icon-github-circled">Github</i>
+          <i class="icon-linkedin-circled">Linkedin</i>
+          <i class="icon-facebook-circled">Facebook</i>
+       </ul>
+    </div>
+  </footer>
+    
+</body>
+<script src="js/script.js"></script>
+</html>
