@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  </head>
+    </head>
 
 
 <body class="container-fluid">
@@ -75,38 +74,40 @@
         <h2>Experience</h2>
         <div class="experience-container">
             <!-- Kinh nghiem -->
-            <div class="experience-box" id="experience" onmouseover="handleOnmouseOver(this) ">
-               <div class="grid" style="margin-top: 20px;">
-                <h1>Kinh nghiệm</h1>
-                <i class="ic-toolbox"></i>  
+            <div class="experience-box pap" id="experience" onmouseover="handleOnmouseOver(this)" onmouseout="handleOnmouseOut(this)">
+              <div class="grid" style="margin-top: 20px;">
+                  <h1>Kinh nghiệm</h1>
+                  <i class="ic-toolbox"></i>  
               </div>
-              <div class="job-content" >
-              <ul>
-                <li><h4> Công ty Beyond Voxelization</h4></li>
-                <p class="time">04/2019-07/2024</p>
-                <p>
-                  Voxel Artist<br />
-                  - Thiết kế, xây dựng NFT theo concept của The SandBox<br/>
-                  - Nhận concept, yêu cầu từ phía client<br />
-                  - Thiết kế gameplay, event cho client<br />
-                </p>
-    
-                <li><h4> Công ty Concentrix Việt Nam</h4></li>
-            <p class="time">08/2024-<span>Hiện Tại</span></p>
-            <p>
-              First Line Agent ETG English<br />
-              - Nhận interaction từ khách hàng<br/>
-              - Điều chỉnh các chuyến bay theo order từ khách <br />
-            </p>
-              </ul>
-            </div>
-            <div class="control-view">
-              <button type="button" class="btn btn-warning view-more">View more</button>
-              <button type="button" class="btn btn-warning view-less">View less</button>
-            </div>
-            </div>
+              <div id="job-content">
+                  <ul>
+                      <li><h4>Công ty Beyond Voxelization</h4></li>
+                      <p class="time">04/2019-07/2024</p>
+                      <p>
+                          Voxel Artist<br />
+                          - Thiết kế, xây dựng NFT theo concept của The SandBox<br/>
+                          - Nhận concept, yêu cầu từ phía client<br />
+                          - Thiết kế gameplay, event cho client<br />
+                      </p>
+          
+                      <li><h4>Công ty Concentrix Việt Nam</h4></li>
+                      <p class="time">08/2024-<span>Hiện Tại</span></p>
+                      <p>
+                          First Line Agent ETG English<br />
+                          - Nhận interaction từ khách hàng<br/>
+                          - Điều chỉnh các chuyến bay theo order từ khách <br />
+                      </p>
+                  </ul>
+              </div>
+              <div class="control-view">
+                  <button type="button" class="btn btn-warning view-more" onclick="handleViewMore(this)">View more</button>
+                  <button type="button" class="btn btn-warning view-less">View less</button>
+              </div>
+          </div>
+          
+          
                 <!-- Hoc van -->
-            <div class="experience-box" id="educate">
+            <div class="experience-box" id="educate" onmouseover="handleOnmouseOver(this)"  onmouseout="handleOnmouseOut(this)" class="pap">
               <div class="grid" style="margin-top: 20px;">
                 <h1>Học Vấn</h1>
                 <i class="ic-toolbox "></i>  
@@ -129,12 +130,12 @@
               </ul>
             </div>
             <div class="control-view">
-              <button type="button" class="btn btn-warning view-more">View more</button>
+              <button type="button" class="btn btn-warning view-more" onclick="handleViewMore(this)">View more</button>
               <button type="button" class="btn btn-warning view-less">View less</button>
             </div>
             </div>
                 <!-- Hoat Dong-->
-            <div class="experience-box" id="acitivy">
+            <div class="experience-box" id="acitivy" onmouseover="handleOnmouseOver(this)"  onmouseout="handleOnmouseOut(this)" class="pap">
               <div class="grid" style="margin-top: 20px;">
                 <h1>Họat động</h1>
                 <i class="ic-toolbox"></i>  
@@ -152,18 +153,18 @@
               </ul>
             </div>
             <div class="control-view">
-              <button type="button" class="btn btn-warning view-more">View more</button>
+              <button type="button" class="btn btn-warning view-more" onclick="handleViewMore(this)">View more</button>
               <button type="button" class="btn btn-warning view-less">View less</button>
             </div>
             </div>
 
                 <!-- So thich -->
-            <div class="experience-box" id="hobby">
+            <div class="experience-box" id="hobby" onmouseover="handleOnmouseOver(this)"  onmouseout="handleOnmouseOut(this)" class="pap">
               <div class="grid" style="margin-top: 20px;">
                 <h1>Sở thích</h1>
                 <i class="ic-telescope"></i>  
               </div>
-              <div class="line-2" >
+              <div class="job-content" >
                 <i class="ic-megaphone icn"></i>
                 <i class="ic-strategy icn"></i>
                 <i class="ic-hotairballoon icn"></i>
@@ -174,17 +175,17 @@
                 <p>Nấu ăn</p>
               </div>
               <div class="control-view">
-                <button type="button" class="btn btn-warning view-more">View more</button>
+                <button type="button" class="btn btn-warning view-more" onclick="handleViewMore(this)">View more</button>
                 <button type="button" class="btn btn-warning view-less">View less</button>
               </div>
             </div>
                 <!-- Ngon ngu-->
-            <div class="experience-box"  id="language">
+            <div class="experience-box"  id="language" onmouseover="handleOnmouseOver(this)"  onmouseout="handleOnmouseOut(this)" class="pap">
               <div class="grid" style="margin-top: 20px;">
                 <h1>Ngôn Ngữ</h1>
                 <i class="ic-telescope "></i>  
               </div>
-              <div class="line-3">
+              <div class="job-content">
                 <p> Tiếng Anh</p>
                      <span class="blue"></span>
                       <span class="blue"></span>
@@ -199,17 +200,17 @@
                       <span class="gray"></span>
               </div>
               <div class="control-view">
-                <button type="button" class="btn btn-warning view-more">View more</button>
+                <button type="button" class="btn btn-warning view-more" onclick="handleViewMore(this)">View more</button>
                 <button type="button" class="btn btn-warning view-less">View less</button>
               </div>
             </div>
                 <!-- Ky nang -->
-            <div class="experience-box" id="skill">
+            <div class="experience-box" id="skill" onmouseover="handleOnmouseOver(this)"  onmouseout="handleOnmouseOut(this)" class="pap">
               <div class="grid" style="margin-top: 20px;">
                 <h1>Kỹ năng</h1>
                 <i class="ic-telescope"></i>  
               </div>
-              <div class="line-4">
+              <div class="job-content">
                 <p> C#</p>
                 <span class="blue"></span>
                 <span class="blue"></span>
@@ -231,7 +232,7 @@
 
               </div>
               <div class="control-view">
-                <button type="button" class="btn btn-warning view-more">View more</button>
+                <button type="button" class="btn btn-warning view-more" onclick="handleViewMore(this)">View more</button>
                 <button type="button" class="btn btn-warning view-less">View less</button>
               </div>
             </div>
