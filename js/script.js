@@ -40,6 +40,6 @@ function handleViewMore(element) {
   // {
   //   alert('pap');
   // }
-  const jobContent = parentContent.getElementById(".job-content"); // Selects .job-content inside .pap
+  const jobContent = parentContent.querySelectorAll(".job-content"); // Selects .job-content inside .pap
   jobContent.style.display = 'inline-block'; // Make it visible
 }
