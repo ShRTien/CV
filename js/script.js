@@ -22,16 +22,24 @@ function handleOnmouseOver(element)
 {
 
   const viewmore = element.querySelector('.view-more');
-  console.log("zoo");
   viewmore.style.display='inline-block';
   
 }
 
-function handleOnmouseOut(elements)
+function handleOnmouseOut(element)
 {
 
-  const viewless = elements.querySelector('.view-less');
-  console.log("notzo");
+  const viewless = element.querySelector('.view-more');
   viewless.style.display='none';
   
+}
+
+function handleViewMore(element) {
+  const parentContent = element.querySelector(".experience-box"); // Selects the first .pap inside element
+  // if (!parentContent)
+  // {
+  //   alert('pap');
+  // }
+  const jobContent = parentContent.getElementById(".job-content"); // Selects .job-content inside .pap
+  jobContent.style.display = 'inline-block'; // Make it visible
 }
